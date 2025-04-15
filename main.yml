@@ -1,0 +1,6 @@
+---
+- name: Setup raspberrypi
+  hosts: raspberry_pis
+  gather_facts: yes
+  roles:
+    - setup-raspberrypi
