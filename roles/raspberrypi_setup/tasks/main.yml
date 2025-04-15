@@ -1,7 +1,7 @@
 ---
 - name: Set target roles:
   ansible.builtin.set_fact:
-    target_roles: [ "apt update" ]
+    target_roles: [ "apt_update" ]
 
 - name: Ubuntu Setup
   ansible.builtin.include_tasks:
