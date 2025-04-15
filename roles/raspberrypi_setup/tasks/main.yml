@@ -1,0 +1,9 @@
+---
+- name: Set target roles:
+  ansible.builtin.set_fact:
+    target_roles: [ "apt update" ]
+
+- name: Ubuntu Setup
+  ansible.builtin.include_tasks:
+    name: "{{ item }}"
+  loop: "{{ target_roles }}"
